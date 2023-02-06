@@ -1,0 +1,347 @@
+package PartsHouse;
+
+public class House {
+    public static final int MAX_ROOMS = 10;
+    public int i=0;
+    public int j=0;
+    private Kitchen kitchen;
+    private DiningRoom diningRoom;
+    private LivingRoom livingRoom;
+    private RestRoom[] restRooms = new RestRoom[MAX_ROOMS];
+    private BedRoom[] bedRooms = new BedRoom[MAX_ROOMS];
+    private Yard yard;
+
+    public void addroom(BedRoom bedRoom) {
+        while(i<bedRooms.length){
+        BedRoom[i] = bedRoom;
+        i++;
+    }
+
+}
+    public void addroom(RestRoom restRoom) {
+        while (j < restRooms.length) {
+            RestRoom[j] = restRoom;
+            j++;
+        }
+    }
+    public Kitchen getkitchen() {
+        return kitchen;
+    }
+
+    public Kitchen getKitchen() {
+        return kitchen;
+    }
+
+    public DiningRoom getDiningRoom() {
+        return diningRoom;
+    }
+
+    public void setDiningRoom(DiningRoom diningRoom) {
+        this.diningRoom = diningRoom;
+
+    }
+    public LivingRoom getLivingRoom() {
+        return livingRoom;
+    }
+    public void setLivingRoom(LivingRoom livingRoom) {
+        this.livingRoom = livingRoom;
+
+    }
+    public RestRoom[] getRestRoom(){
+        return restRooms;
+    }
+public void setRestRooms(RestRoom restRooms[]){
+        this.restRooms=restRooms;
+}
+    public BedRoom[] getBedRooms() {
+        return bedRooms;
+    }
+public void setBedRooms(BedRoom bedRooms[]){
+        this.bedRooms=bedRooms;
+}
+    public Yard getYard() {
+        return yard;
+    }
+    public void setYard(Yard yard) {
+        this.yard = yard;
+
+    }
+}
+
+
+package PartsHouse;
+public class RestRoom {
+
+    private boolean showerCabin;
+    private int width;
+    private int height;
+    private String color;
+    public boolean getshowerCabin(){
+        return showerCabin;
+    }
+    public void setShowerCabin(boolean showerCabin) {
+        this.showerCabin=showerCabin;
+
+    }
+    public int getwidth(){
+        return width;
+    }
+    public void setWidth(int width) {
+        this.width=width;
+
+    }  public int getHeight(){
+        return height;
+    }
+    public void setHeight(int height) {
+        this.height=height;
+
+    }  public String getColor(){
+        return color;
+    }
+    package PartsHouse;
+public class BedRoom {
+    private BedSize bedSize;
+    private boolean tv;
+    private int width;
+    private int height;
+    private String color;
+
+    public BedSize getBedSize(){
+        return bedSize;
+    }
+    public void setBedSize(BedSize bedSize) {
+        this.bedSize=bedSize;
+
+    }
+    public int getwidth(){
+        return width;
+    }
+    public void setWidth(int width) {
+        this.width=width;
+
+    }  public int getHeight(){
+        return height;
+    }
+    public void setHeight(int height) {
+        this.height=height;
+
+    }  public String getColor(){
+        return color;
+    }
+    public void setColor(String color) {
+        this.color=color;
+
+    }
+}
+package PartsHouse;
+public class Yard {
+    private boolean grass;
+    private int Width;
+    private int Height;
+    private String color;
+    private int height;
+
+    public boolean getgrass(){
+        return grass;
+    }
+    public void setGrass(boolean grass) {
+        this.grass = grass;
+    }
+    public void setWidth(int width){
+        this.Width=width;
+    }
+
+    public int getwidth() {
+        return Width;
+    }
+
+    public int getHeight()
+    {
+        return Height;
+    }
+    public void setHeight(int Height){
+        this.Height=Height;
+    }
+    public void setcolor(String color){
+        this.color=color;
+    }
+    public String getcolor()
+    {
+        return color;
+    }
+}
+package PartsHouse;
+public class Kitchen {
+  private boolean stove;
+  private boolean sink;
+  private int windows;
+  private boolean refrigerator;
+  private boolean oven;
+  private int width;
+  private int height;
+  private String color;
+
+  public boolean getstove(){
+  return stove;
+}
+public void setStove(boolean stove) {
+this.stove=stove;
+
+}
+
+  public boolean getsink(){
+    return sink;
+  }
+  public void setSink(boolean sink) {
+    this.sink=sink;
+
+  }
+  public int getWindows(){
+    return windows;
+  }
+  public void setWindows(int windows) {
+    this.windows=windows;
+
+  }
+  public boolean refrigerator(){
+    return refrigerator;
+  }
+  public void setRefrigerator (boolean refrigerator) {
+    this.refrigerator=refrigerator;
+
+  }
+  public boolean getoven(){
+    return oven;
+  }
+  public void setOven(boolean oven) {
+    this.oven=oven;
+
+  }
+  public int getwidth(){
+    return width;
+  }
+  public void setWidth(int width) {
+    this.width=width;
+
+  }
+  public int getHeight(){
+    return height;
+  }
+  public void setHeight(int height) {
+    this.height=height;
+
+  }
+  public String getColor(){
+    return color;
+  }
+  public void setColor(String color) {
+    this.color=color;
+
+  }
+  }
+  package PartsHouse;
+public class DiningRoom {
+    private int windows;
+    private boolean tv;
+private int chairsCapacity;
+    private int width;
+    private int height;
+    private String color;
+
+    public int getWindows(){
+        return windows;
+    }
+    public void setWindows(int windows) {
+        this.windows=windows;
+
+    }
+
+    public boolean getTv(){
+        return tv;
+    }
+    public void setTv(boolean tv) {
+        this.tv = tv;
+    }
+public int getchairsCapacity() {
+        return chairsCapacity;
+        }
+   public void setChairsCapacity(int chairsCapacity){
+        this.chairsCapacity=chairsCapacity;
+   }
+    public void setWidth(int width) {
+        this.width=width;
+
+    }  public int getWidth(){
+        return width;
+    }
+    public void setHeight(int height) {
+        this.height=height;
+
+    }  public String getColor(){
+        return color;
+    }
+    public void setColor(String color) {
+        this.color=color;
+
+    }
+}
+package PartsHouse;
+public class LivingRoom {
+    private int windows;
+    private boolean tv;
+    private boolean homeTheater;
+    private int width;
+    private int height;
+    private String color;
+    public int getWindows(){
+        return windows;
+    }
+    public void setWindows(int windows) {
+        this.windows=windows;
+
+    }
+
+    public boolean getTv(){
+        return tv;
+    }
+    public void setTv(boolean tv) {
+        this.tv = tv;
+    }
+
+  public boolean getHomeTheater(){
+    return homeTheater;
+}
+    public void setHomeTheater(boolean homeTheater) {
+        this.homeTheater=homeTheater;
+
+    }  public boolean gethomeTheater(){
+    return homeTheater;
+}
+    public int getwidth(){
+        return width;
+    }
+    public void setWidth(int width) {
+        this.width=width;
+
+    }  public int getHeight(){
+    return height;
+}
+    public void setHeight(int height) {
+        this.height=height;
+
+    }  public String getColor(){
+    return color;
+}
+    public void setColor(String color) {
+        this.color=color;
+
+    }
+}
+
+public enum BedSize {
+    invidual ,
+    matrimonial,
+    queen,
+    king,
+
+}
